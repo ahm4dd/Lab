@@ -5,13 +5,12 @@ public class Sphere extends ThreeD{
 
     public Sphere(Circle circle)
     {
+        super(circle.getColor(), circle.getName());
         if (circle.getRadius() < 0)
         {
             throw new IllegalArgumentException("Negative value");
         }
         else {
-            super.setName(circle.getName());
-            super.setColor(circle.getColor());
             this.circle = circle;
             super.setVolume(((double) 4/3)*pi*(circle.getRadius()*circle.getRadius()*circle.getRadius()));
         }

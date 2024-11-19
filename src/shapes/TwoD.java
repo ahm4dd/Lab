@@ -4,6 +4,10 @@ public class TwoD extends Shape{
     private double area;
     final public double pi = 3.14;
 
+    public TwoD(String color, String name){
+        super(color, name);
+    }
+
     public void setArea(double area){
         if (area < 0)
         {

@@ -5,13 +5,12 @@ public class Square extends TwoD {
 
     public Square(String color, String name, double side)
     {
+        super(color, name);
         if (side < 0)
         {
             throw new IllegalArgumentException("Negative value");
         }
         else {
-            super.setColor(color);
-            super.setName(name);
             setSide(side);
             super.setArea(side*side);
         }

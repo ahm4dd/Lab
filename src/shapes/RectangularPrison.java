@@ -6,13 +6,12 @@ public class RectangularPrison extends ThreeD{
     private double height;
 
     public RectangularPrison(String color, String name, double length, double base, double height){
+        super(color, name);
         if (length < 0 || base < 0 || height < 0)
         {
             throw new IllegalArgumentException("Negative value");
         }
         else {
-            super.setColor(color);
-            super.setName(name);
             this.length = length;
             this.base = base;
             this.height = height;

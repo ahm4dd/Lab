@@ -5,14 +5,12 @@ public class Cube extends ThreeD {
 
     public Cube(Square square)
     {
+        super(square.getColor(), square.getName());
         if (square.getSide() < 0)
         {
             throw new IllegalArgumentException("Negative value");
         }
         else {
-
-            super.setColor(square.getColor());
-            super.setName(square.getName());
             this.square = square;
             super.setVolume(square.getSide()*square.getSide()*square.getSide());
         }

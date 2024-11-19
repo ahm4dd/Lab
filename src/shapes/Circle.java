@@ -4,14 +4,13 @@ public class Circle extends TwoD{
    private double radius;
 
    public Circle(String color, String name, double radius){
+      super(color, name);
       if (radius < 0)
       {
          throw new IllegalArgumentException("Negative value");
       }
 
       else {
-         super.setColor(color);
-         super.setName(name);
          this.radius = radius;
          super.setArea(radius*radius*pi);
       }

@@ -6,13 +6,12 @@ public class Cone extends ThreeD {
 
     public Cone(Circle circle, double height)
     {
+        super(circle.getColor(), circle.getName());
         if (circle.getRadius() < 0 || height < 0)
         {
             throw new IllegalArgumentException("Negative value");
         }
         else {
-            super.setColor(circle.getColor());
-            super.setName(circle.getName());
             this.circle = circle;
             this.height = height;
             super.setVolume((double) 1/3 * pi * circle.getRadius()*circle.getRadius()*height);
