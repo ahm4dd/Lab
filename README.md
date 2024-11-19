@@ -1,4 +1,4 @@
 UML diagram: 
 
 
-![image](https://github.com/user-attachments/assets/970a83ce-f1fa-48bd-b952-4e2700915093)
+![UML](https://github.com/user-attachments/assets/54672a4e-0664-4d41-a1d7-7194a978357c)
