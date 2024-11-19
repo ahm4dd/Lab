@@ -1,3 +1,5 @@
+package shapes;
+
 public class TwoD extends Shape{
     private double area;
     final public double pi = 3.14;

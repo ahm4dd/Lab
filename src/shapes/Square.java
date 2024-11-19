@@ -1,7 +1,9 @@
+package shapes;
+
 public class Square extends TwoD {
     private double side;
 
-    Square(String color, String name, double side)
+    public Square(String color, String name, double side)
     {
         if (side < 0)
         {

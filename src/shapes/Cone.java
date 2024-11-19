@@ -1,8 +1,10 @@
+package shapes;
+
 public class Cone extends ThreeD {
     private double height;
     private Circle circle;
 
-    Cone(Circle circle, double height)
+    public Cone(Circle circle, double height)
     {
         if (circle.getRadius() < 0 || height < 0)
         {
@@ -13,7 +15,7 @@ public class Cone extends ThreeD {
             super.setName(circle.getName());
             this.circle = circle;
             this.height = height;
-            super.setVolume((double) (1 / 3) * pi * (circle.getRadius() * circle.getRadius()) * height);
+            super.setVolume((double) 1/3 * pi * circle.getRadius()*circle.getRadius()*height);
         }
     }
 

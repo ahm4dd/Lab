@@ -1,7 +1,9 @@
+package shapes;
+
 public class Sphere extends ThreeD{
     private Circle circle;
 
-    Sphere(Circle circle)
+    public Sphere(Circle circle)
     {
         if (circle.getRadius() < 0)
         {

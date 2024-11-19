@@ -1,13 +1,15 @@
+package shapes;
+
 public class Shape {
     private String color;
     private String name;
 
-    Shape()
+    public Shape()
     {
 
     }
 
-    Shape(String color, String name) {
+    public Shape(String color, String name) {
         this.color = color;
         this.name = name;
     }

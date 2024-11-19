@@ -1,7 +1,9 @@
+package shapes;
+
 public class Circle extends TwoD{
    private double radius;
 
-   Circle(String color, String name, double radius){
+   public Circle(String color, String name, double radius){
       if (radius < 0)
       {
          throw new IllegalArgumentException("Negative value");

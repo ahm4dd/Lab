@@ -1,7 +1,9 @@
+package shapes;
+
 public class Cube extends ThreeD {
     private Square square;
 
-    Cube(Square square)
+    public Cube(Square square)
     {
         if (square.getSide() < 0)
         {

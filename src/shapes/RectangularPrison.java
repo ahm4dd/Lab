@@ -1,9 +1,11 @@
+package shapes;
+
 public class RectangularPrison extends ThreeD{
     private double length;
     private double base;
     private double height;
 
-    RectangularPrison(String color, String name, double length, double base, double height){
+    public RectangularPrison(String color, String name, double length, double base, double height){
         if (length < 0 || base < 0 || height < 0)
         {
             throw new IllegalArgumentException("Negative value");
